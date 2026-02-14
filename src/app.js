@@ -7,6 +7,7 @@ const questionPapersClass12 = require("./routes/questionPapersClass12.routes.js"
 const NotesPapersClass10 = require("./routes/notesPaperClass10.routes.js");
 const NotesPapersClass12 = require("./routes/notesPaperClass12.routes.js");
 const mcqQuestion = require("./routes/subjects.js");
+const userComment = require("./routes/userComment.router.js");
 const app = express();
 const path = require("path");
 
@@ -28,5 +29,6 @@ app.use("/api/class12", questionPapersClass12);
 app.use("/api/notes/class10", NotesPapersClass10);
 app.use("/api/notes/class12", NotesPapersClass12);
 app.use("/api/mcq", mcqQuestion);
+app.use("/api/ucer-comment", userComment);
 module.exports = app;
 
